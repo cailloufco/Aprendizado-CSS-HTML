@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImagemFlexivel</title>
+    <link
+      rel="shortcut icon"
+      href="../exercisioproposto/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      fazendo testes com imagens que se flexionam de acordo com o tamanho da
+      tela ou do tamanho da pagina
+    </p>
+    <picture>
+      <source
+        media="(max-height:384px), (max-width: 328px)"
+        srcset="assets/android-chrome-192x192.png"
+        type="image/png"
+        style="border-radius: 10%"
+      />
+
+      <source
+        media="(max-height: 576px), (max-width: 512px)"
+        srcset="assets/android-chrome-328x328.png"
+        type="image/png"
+        style="border-radius: 10%"
+      />
+
+      <img
+        src="assets/android-chrome-512x512.png"
+        alt="img-grande"
+        style="border-radius: 10%"
+      />
+    </picture>
+    <h2>Música Favorita</h2>
+    <audio preload="metadata" controls>
+      <source src="../estudos/rise.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+</html>
