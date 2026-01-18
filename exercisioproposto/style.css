@@ -19,9 +19,23 @@ body{
 .iconesRedesSociais{
     font-style: none;
     padding-left:15px ;
-}a{
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+}.iconesRedesSociais .social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;               
+}.iconesRedesSociais .social img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+}
+a{
     text-decoration: none;
     color: red;
+    
 }
 a:hover{
     text-decoration: underline;
