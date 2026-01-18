@@ -1,51 +1,55 @@
-body{
-    background-image: linear-gradient(180deg ,#8D7000 , #FFDA48);
-    min-height: 100dvh;
-    padding-left: 7px;
+body {
+  background-image: linear-gradient(180deg, #8d7000, #ffda48);
+  min-height: 100dvh;
+  padding-left: 7px;
 }
-.titulo{
-    color: #2A09E0;
-    font-weight: 900;
-    font-family: 'Gravitas One';
-}.subtitulo{
-    color: #2A09E0;
-    font-style: italic;
-    font-variant: small-caps;
+.titulo {
+  color: #2a09e0;
+  font-weight: 900;
+  font-family: "Gravitas One";
 }
-.paragrafo{
-    color: azure;
+.subtitulo {
+  color: #2a09e0;
+  font-style: italic;
+  font-variant: small-caps;
+}
+.paragrafo {
+  color: azure;
 }
 
-.iconesRedesSociais{
-    font-style: none;
-    padding-left:15px ;
-    flex-direction: column;
-    display: flex;
-    gap: 8px;
-}.iconesRedesSociais .social {
+.iconesRedesSociais {
+  font-style: none;
+  padding-left: 15px;
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+  width: max-content;
+}
+.iconesRedesSociais .social {
   display: inline-flex;
   align-items: center;
-  gap: 8px;               
-}.iconesRedesSociais .social img{
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    display: block;
+  gap: 8px;
 }
-a{
-    text-decoration: none;
-    color: red;
-    
+.iconesRedesSociais .social img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
 }
-a:hover{
-    text-decoration: underline;
+a {
+  text-decoration: none;
+  color: red;
 }
-a:visited{
-    color: darkred;
-}a:active{
-    color: #150763;
+a:hover {
+  text-decoration: underline;
 }
-#meuNome{
-    font-family: 'Gravitas One';
-    color: #150763;
+a:visited {
+  color: darkred;
+}
+a:active {
+  color: #150763;
+}
+#meuNome {
+  font-family: "Gravitas One";
+  color: #150763;
 }
