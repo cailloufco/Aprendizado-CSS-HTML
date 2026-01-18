@@ -6,6 +6,7 @@ body{
 .titulo{
     color: #2A09E0;
     font-weight: 900;
+    font-family: 'Gravitas One';
 }.subtitulo{
     color: #2A09E0;
     font-style: italic;
@@ -16,7 +17,19 @@ body{
 }
 
 .iconesRedesSociais{
+    font-style: none;
     padding-left:15px ;
+}a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: darkred;
+}a:active{
+    color: #150763;
 }
 #meuNome{
     font-family: 'Gravitas One';
