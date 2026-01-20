@@ -1,17 +1,22 @@
 body {
   background-image: linear-gradient(180deg, #8d7000, #ffda48);
   min-height: 100dvh;
+
+  margin: 0;
   padding-left: 7px;
+  
 }
 .titulo {
   color: #2a09e0;
   font-weight: 900;
   font-family: "Gravitas One";
+  text-shadow: rgba(0, 0, 0, 0.555) 3px 3px 15px;
 }
 .subtitulo {
   color: #2a09e0;
   font-style: italic;
   font-variant: small-caps;
+  text-shadow: rgba(0, 0, 0, 0.555) 3px 3px 15px;
 }
 .paragrafo {
   color: azure;
@@ -38,7 +43,7 @@ body {
   object-fit: contain;
   display: block;
 }
-a {
+a{
   text-decoration: none;
   color: red;
 }

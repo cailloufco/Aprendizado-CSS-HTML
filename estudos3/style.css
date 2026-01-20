@@ -1,0 +1,48 @@
+body {
+  background-image: linear-gradient(180deg, #ffc200, #ad8300);
+  height: 100vh;
+  width: auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  background-image: linear-gradient(to right, #0d0979, #5a55d7);
+  padding: 12px;
+  width: 230px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  align-items: center;
+    justify-content: space-between;
+}
+nav > a{
+    color: white;
+}
+nav > a:hover {
+  color: red;
+}
+
+main {
+  color: white;
+}
+h1 {
+  width: 400px;
+  height: 240px;
+  margin: auto;
+  border: 4px solid black;
+  align-content: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: aqua;
+}
+span {
+  border: 2px dashed red;
+  background-color: blueviolet;
+}
+span::after {
+  content: " teste";
+}
