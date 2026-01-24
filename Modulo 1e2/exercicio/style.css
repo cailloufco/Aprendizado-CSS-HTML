@@ -1,0 +1,12 @@
+body {
+  background-image: url(assets/espaco.jpg);
+  display: flex;
+  margin: 0;
+  padding: 0px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
