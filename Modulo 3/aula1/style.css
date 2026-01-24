@@ -1,0 +1,19 @@
+.bloco {
+  height: 178px;
+  border: 1px solid black;
+  border-radius: 12px 0px 12px 0px;
+  margin: 10px;
+  background-image: url(assets/wallpaper003.jpg);
+}
+div#q1 {
+  background-position: left top;
+}
+div#q2 {
+  background-position: right top;
+}
+div#q3 {
+  background-position: left bottom;
+}
+div#q4 {
+  background-position: right bottom;
+}
