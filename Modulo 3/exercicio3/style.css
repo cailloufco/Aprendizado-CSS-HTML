@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0px;
+    
+}header{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 5px;
+    size: 100%;
+    
+}header>h1{
+    margin: 0;
+    font-family: "Passion One";
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 7vw;
+}header>p{
+    margin: 0 auto;
+    padding: 0px 0px 8px 0px;
+}section{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    color: black;
+    text-align: left;
+}p{
+    font-size: 2.7vw;
+    font-family: "Sriracha";
+    margin: 0;
+    margin-top: 2.3vh;
+    margin-left: 1vh;
+    margin-bottom: 2vh;
+
+}.background{
+    height: 45dvw;
+    background-position: center center;
+    background-attachment:fixed ;
+    display: flex;
+    align-items: center;
+
+}#background1{
+    background-image: url(assets/background001.jpg);
+    
+    
+}#background1 > p{
+    background-color: rgba(0, 0, 0, 0.171);
+    width: max-content;
+    height: max-content;
+    padding: 12px;
+    color: white;
+}#background2{
+    background-image: url(assets/background002.jpg);
+}#background2 > p{
+    background-color: rgba(0, 0, 0, 0.295);
+    width: max-content;
+    height: max-content;
+    padding: 12px;
+    color: white;
+}footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
