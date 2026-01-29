@@ -1,11 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulário</title>
+  </head>
+  <body>
+    <h1>Primeiro formulário</h1>
+    <form method="post" action="cadastrar.js" autocomplete="on">
+        <p>
+            <label for="inome">Nome*: </label><input type="text" name="nome" id="inome" required minlength="6" placeholder="Digite seu nome!" size="16">
+        </p>
+        <p>
+            <label for="isenha">Senha*: </label><input type="text" name="senha" id="isenha" required minlength="8" placeholder="Digite sua senha!" size="16" autocomplete="new-password">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+  </body>
 </html>
