@@ -7,14 +7,20 @@
   </head>
   <body>
     <h1>Primeiro formulário</h1>
-    <form method="post" action="cadastrar.js" autocomplete="on">
-        <p>
-            <label for="inome">Nome*: </label><input type="text" name="nome" id="inome" required minlength="6" placeholder="Digite seu nome!" size="16">
-        </p>
-        <p>
-            <label for="isenha">Senha*: </label><input type="text" name="senha" id="isenha" required minlength="8" placeholder="Digite sua senha!" size="16" autocomplete="new-password">
-        </p>
-        <p><input type="submit" value="Enviar"></p>
-    </form>
+    <fieldset style="width: 300px; border-radius: 5px;">
+      <legend>Dados pessoais</legend>
+      <form method="post" action="cadastrar.js" autocomplete="on">
+          <p>
+              <label for="inome">Nome*: <input type="text" name="nome" id="inome" required minlength="6" placeholder="Digite seu nome!" size="16"></label>
+          </p>
+          <p>
+            <label for="iemail">E-mail:</label> <input type="email" name="email" id="iemail" autocomplete="email" size="16">
+          </p>
+          <p>
+              <label for="isenha">Senha*: <input type="text" name="senha" id="isenha" required minlength="8" placeholder="Digite sua senha!" size="16" autocomplete="new-password"></label>
+          </p>
+          <p><input type="submit" value="Enviar"></p>
+      </form>
+    </fieldset>
   </body>
 </html>
