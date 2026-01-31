@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.containerFieldSet {
+  display: flex;
+  width: 100%;
+}
+fieldset {
+  flex: 1;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 0;
+  padding: 15px;
+  margin: 12px;
+}
+@media (max-width: 600px) {
+  .containerFieldSet {
+    flex-direction: column;
+  }
+}

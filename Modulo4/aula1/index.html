@@ -4,23 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>formulário</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Primeiro formulário</h1>
-    <fieldset style="width: 300px; border-radius: 5px;">
-      <legend>Dados pessoais</legend>
-      <form method="post" action="cadastrar.js" autocomplete="on">
-          <p>
-              <label for="inome">Nome*: <input type="text" name="nome" id="inome" required minlength="6" placeholder="Digite seu nome!" size="16"></label>
-          </p>
-          <p>
-            <label for="iemail">E-mail:</label> <input type="email" name="email" id="iemail" autocomplete="email" size="16">
-          </p>
-          <p>
-              <label for="isenha">Senha*: <input type="text" name="senha" id="isenha" required minlength="8" placeholder="Digite sua senha!" size="16" autocomplete="new-password"></label>
-          </p>
-          <p><input type="submit" value="Enviar"></p>
-      </form>
+    <div class="containerFieldSet">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <form method="post" action="cadastrar.js">
+            <p>
+                <label for="inome">Nome*: <input type="text" name="nome" id="inome" required minlength="6" placeholder="Digite seu nome!" size="16"></label>
+            </p>
+            <p>
+              <label for="iemail">E-mail:</label> <input type="email" name="email" id="iemail" autocomplete="email" size="16">
+            </p>
+            <p>
+                <label for="isenha">Senha*: <input type="text" name="senha" id="isenha" required minlength="8" placeholder="Digite sua senha!" size="16" autocomplete="new-password"></label>
+            </p>
+      </fieldset>
+      <fieldset>
+        <legend>Mais testes</legend>
+        <p><label for="icor">Cor: <input type="color" name="cor" id="icor"></label></p>
+        <fieldset>
+          <legend>Sexo</legend>
+        <p><label for="iSexMasculino">Masculino:<input type="radio" name="Sexo" id="iSexMasculino"></label></p>
+          <p><label for="iSexFeminino">Feminino: <input type="radio" name="Sexo" id="iSexFeminino"></label></p>
+        </fieldset>
+      </fieldset>
+    </div>
+    <fieldset>
+      <legend>Rating</legend>
+      <p><label for="irating">Avaliação: <input type="range" name="rating" id="irating" min="0" max="10" step="1"></label></p>
     </fieldset>
+<h2><p><input type="submit" value="Enviar"></p></h2>
+
   </body>
 </html>
