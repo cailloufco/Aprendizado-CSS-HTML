@@ -1,18 +1,78 @@
-@media (min-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-}
-@media (min-width: 480px) {
+@media screen and (max-width: 599px) {
   /* smartphones, Android phones, landscape iPhone */
+  body {
+    background-image: url(../src/images/back-phone.jpg);
+  }
+  .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}   img{
+    height: 150px;
+    width: 150px;
+    margin: 5px;
 }
-@media (min-width: 600px) {
+  #phone {
+    box-shadow: 0px 0px 40px 20px green;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  body {
+    background-image: url(../src/images/back-tablet.jpg);
+  }.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  }
+  img{
+    height: 180px;
+    width: 180px;
+    margin: 8px;
+  }
+  #phone {
+    box-shadow: 0px 0px 40px 20px green;
+  }
+  #tablet {
+    box-shadow: 0px 0px 40px 20px green;
+  }
 }
-@media (min-width: 801px) {
+@media (min-width: 801px) and (max-width: 1024px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  body {
+    background-image: url(../src/images/back-tablet.jpg);
+  }
+  #tablet {
+    box-shadow: 0px 0px 40px 20px green;
+  }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   /* big landscape tablets, laptops, and desktops */
+  body {
+    background-image: url(../src/images/back-pc.jpg);
+  }
+  #tablet {
+    box-shadow: 0px 0px 40px 20px green;
+  }
+  #pc {
+    box-shadow: 0px 0px 40px 20px green;
+  }
 }
-@media (min-width: 1281px) {
+@media (min-width: 1281px) and (max-width: 1600px) {
   /* hi-res laptops and desktops */
+  body {
+    background-image: url(../src/images/back-pc.jpg);
+  }
+  #pc {
+    box-shadow: 0px 0px 40px 20px green;
+  }
+}
+@media (min-width: 1601px) {
+  /* large screens, TV */
+  body {
+    background-image: url(../src/images/back-tv.jpg);
+  }
+  #tv {
+    box-shadow: 0px 0px 40px 20px green;
+  }
 }
