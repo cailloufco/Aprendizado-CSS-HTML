@@ -13,7 +13,7 @@
     margin: 5px;
 }
   #phone {
-    box-shadow: 0px 0px 40px 20px green;
+    display: block;
   }
 }
 @media (min-width: 600px) and (max-width: 768px) {
@@ -31,9 +31,8 @@
     margin: 8px;
   }
   #phone {
-    box-shadow: 0px 0px 40px 20px green;
+    display: block;
   }
-
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -41,7 +40,7 @@
     background-image: url(../src/images/back-tablet.jpg);
   }
   #tablet {
-    box-shadow: 0px 0px 40px 20px green;
+    display: block;
   }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -49,11 +48,8 @@
   body {
     background-image: url(../src/images/back-pc.jpg);
   }
-  #tablet {
-    box-shadow: 0px 0px 40px 20px green;
-  }
   #pc {
-    box-shadow: 0px 0px 40px 20px green;
+    display: block;
   }
 }
 @media (min-width: 1281px) and (max-width: 1600px) {
@@ -62,7 +58,8 @@
     background-image: url(../src/images/back-pc.jpg);
   }
   #pc {
-    box-shadow: 0px 0px 40px 20px green;
+    
+    display: block;
   }
 }
 @media (min-width: 1601px) {
@@ -71,6 +68,6 @@
     background-image: url(../src/images/back-tv.jpg);
   }
   #tv {
-    box-shadow: 0px 0px 40px 20px green;
+    display: block;
   }
 }
