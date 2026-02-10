@@ -1,33 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" media="all" />
     <title>Exercício Tela de Login</title>
-</head>
-<body>
-    
-     <main>
-        <section class="container">
-            <h1>Login</h1>
-            <form id="loginForm">
-                <div class="areaDeInput">
-                    <label for="username">Usuário:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="areaDeInput">
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit">Entrar</button>
-            </form>
-        </section>
-        <aside>                                     
-            <div id="backgroundSection"></div>
-        </aside>
-     </main>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1>Login</h1>
+        <form id="loginForm" method="post">
+          <div class="areaDeInput">
+            <label for="username"
+              ><img src="src/user-solid-full-white.svg" alt=""
+            /></label>
+            <input
+              type="email"
+              id="username"
+              name="e-mail"
+              class="typeArea"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              required
+            />
+          </div>
+          <div class="areaDeInput">
+            <label for="password"
+              ><img src="src/key-solid-full-white.svg" alt=""
+            /></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="typeArea"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$"
+              title="A senha precisa ter pelo menos 8 caracteres, com letras maiúsculas e minúsculas, números e caracteres especiais."
+              required
+            />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+      </section>
+      <aside>
+        <div id="backgroundSection"></div>
+      </aside>
+    </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
